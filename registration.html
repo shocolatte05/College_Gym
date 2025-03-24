@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST Gym | Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<script>
+    function scrollToRegistration() {
+        document.getElementById("registration-form").scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+<body class="registrationform">
+    <header>
+      <div class="nav-container">
+          <img src="cstlogo.png" alt="CST Gym Logo" class="logo">
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="registration.html">Registration</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="regulation.html">Regulation</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+          <img src="cstgymlogo.png" alt="CST Gym Logo 2" class="logo-right">
+      </div>
+  </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>BECOME A MEMBER TODAY!</h1>
+            <button class="btn" onclick="scrollToRegistration()">SIGN UP</button>
+        </div>
+    </section>
+
+    <!-- Membership Registration -->
+    <section class="registration" id="registration-form">
+        <div class="registration-form">
+            <h2>Membership Registration</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Phone Number" required>
+                <input type="text" placeholder="ID Number" required>
+                <textarea placeholder="Reason to join" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <p class="terms">
+                <strong>Terms and Conditions</strong>
+                <ul>
+                    <li>Only registered students, faculty, and verified members can access.</li>
+                    <li>The gym is not responsible for lost or damaged items.</li>
+                    <li>Users must follow gym rules and dress appropriately.</li>
+                    <li>Competitions must be booked 72 hours in advance.</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+    <!-- Membership Fee Table -->
+    <section class="membership-fee">
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Membership Fee</th>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>Faculty</td>
+                <td>Nu.500/Month</td>
+            </tr>
+            <tr>
+                <td>Outsiders</td>
+                <td>Nu.1000/Month</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Follow us on</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>CST Gym | College of Science and Technology, Bhutan</p>
+            <p>Phuentsholing, Bhutan</p>
+            <p>Phone: +975 XXXXXXXX</p>
+        </div>
+    </footer>
+
+</body>
+</html>
